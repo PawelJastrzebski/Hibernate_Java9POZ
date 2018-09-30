@@ -1,4 +1,4 @@
-package jdbc.student;
+package com.sda.jdbc.student;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -8,7 +8,7 @@ import java.util.Map;
 public class StudentRepository implements AbstractRepsitoryI<Student> {
 
 
-    String DB_CONNECTION = "jdbc:mysql://localhost:3306/test?useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC";
+    String DB_CONNECTION = "com.sda.jdbc:mysql://localhost:3306/test?useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC";
     String DB_USER = "root";
     String DB_PASSWORD = "admin";
 

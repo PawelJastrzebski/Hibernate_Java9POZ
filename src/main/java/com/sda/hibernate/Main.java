@@ -1,7 +1,7 @@
-package hibernate;
+package com.sda.hibernate;
 
-import dto.Dog;
-import dto.Person;
+import com.sda.dto.Dog;
+import com.sda.dto.Person;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

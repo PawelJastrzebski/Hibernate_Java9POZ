@@ -1,4 +1,4 @@
-package jdbc.student;
+package com.sda.jdbc.student;
 
 public class Student {
     private int idStudent;

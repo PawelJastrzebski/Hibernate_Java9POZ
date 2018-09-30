@@ -1,4 +1,4 @@
-package hibernate_session;
+package com.sda.hibernate_session;
 
 import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
@@ -42,17 +42,17 @@ public class HibernateUtils {
 //
 //            //Create Properties, can be read from property files too
 //            Properties props = new Properties();
-//            props.put("hibernate_session.connection.driver_class", "com.mysql.jdbc.Driver");
-//            props.put("hibernate_session.connection.url", "jdbc:mysql://localhost/TestDB");
-//            props.put("hibernate_session.connection.username", "pankaj");
-//            props.put("hibernate_session.connection.password", "pankaj123");
-//            props.put("hibernate_session.current_session_context_class", "thread");
+//            props.put("com.sda.hibernate_session.connection.driver_class", "com.mysql.com.sda.jdbc.Driver");
+//            props.put("com.sda.hibernate_session.connection.url", "com.sda.jdbc:mysql://localhost/TestDB");
+//            props.put("com.sda.hibernate_session.connection.username", "pankaj");
+//            props.put("com.sda.hibernate_session.connection.password", "pankaj123");
+//            props.put("com.sda.hibernate_session.current_session_context_class", "thread");
 //
 //            configuration.setProperties(props);
 //
 //            //we can set mapping file or class with annotation
 //            //addClass(Employee1.class) will look for resource
-//            // com/journaldev/hibernate_session/model/Employee1.hbm.xml (not good)
+//            // com/journaldev/com.sda.hibernate_session/model/Employee1.hbm.xml (not good)
 //            configuration.addAnnotatedClass(Employee1.class);
 //
 //            ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();

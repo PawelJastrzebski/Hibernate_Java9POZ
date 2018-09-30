@@ -1,10 +1,10 @@
-package dto;
+package com.sda.dto;
 
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Collection;
 
-@Entity
+//@Entity
 @Table(name="person")
 public class Person {
     @Id

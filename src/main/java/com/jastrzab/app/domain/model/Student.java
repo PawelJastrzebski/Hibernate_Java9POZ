@@ -1,25 +1,37 @@
-package dto;
+package com.jastrzab.app.domain.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import org.hibernate.annotations.Cascade;
+
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "student")
 public class Student {
 
-    @Id @GeneratedValue
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
     private String name;
     private String surname;
     int age;
+    @OneToMany( cascade = {CascadeType.REMOVE,CascadeType.ALL},fetch = FetchType.EAGER, mappedBy = "STUDENT")
+
+   // @JoinColumn(name = "STUDENT")
+    private List<Mark> marks;
+    public Student() {
+        this.marks = new ArrayList<>();
+    }
 
     public Student(String name, String surname, int age) {
+        this();
         this.name = null;
         this.name = name;
         this.surname = surname;
         this.age = age;
+    }
+    public void addMark(Mark mark){
+        this.marks.add(mark);
     }
 
     public int getId() {
@@ -52,5 +64,16 @@ public class Student {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                ", marks=" + marks +
+                '}';
     }
 }

@@ -1,6 +1,6 @@
-package hibernate_session;
+package com.sda.hibernate_session;
 
-import dto.Person;
+import com.sda.dto.Person;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 

@@ -1,4 +1,4 @@
-package jdbc;
+package com.sda.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,7 +8,7 @@ import java.sql.SQLException;
 public class JdbcUpdate {
     public static void main(String[] argv) throws Exception {
 
-        String DB_CONNECTION = "jdbc:mysql://localhost:3306/test?useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC";
+        String DB_CONNECTION = "com.sda.jdbc:mysql://localhost:3306/test?useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC";
         String DB_USER = "root";
         String DB_PASSWORD = "admin";
 
